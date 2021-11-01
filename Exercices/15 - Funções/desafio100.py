@@ -9,14 +9,19 @@ números = []
 def sorteia(num):
     for c in range(0, 5):
         números.append(randint(0, 10))
+
     print(f'A lista ficou {números}.')
 
 
 def somaPar(lst):
-    print(f'O números pares da lista são: ', end='')
+    sompar = 0
+    print(f'A soma dos números pares da lista é: ', end='')
+
     for i in lst:
         if i % 2 == 0 and i != 0:
-            print(f'{i}', end=' ')
+            sompar += i
+
+    print(sompar)
 
 
 sorteia(números)
