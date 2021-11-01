@@ -5,6 +5,7 @@ termos dessa progressão'''
 primeiro = int(input('Digite o primeiro termo da sua progressão: '))
 razao = int(input('Digite o valor da razão: '))
 décimo = primeiro + (10-1) * razao #formula de calcular o décimo termo da progressão
+
 for c in range(primeiro, décimo + razao, razao):
     print(c, end=' ')
 print('FIM')
